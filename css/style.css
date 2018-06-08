@@ -1,0 +1,30 @@
+
+body{
+	line-height: 1.5;
+	 font-family: 'Montserrat', sans-serif;
+	 font-size: 12px;
+	 color: #757575;
+	 min-width: 100%;
+	 padding-top: 0;
+	 overflow-x: hidden;
+	 position: relative;
+	 
+}
+
+
+/*for simple map*/
+.sample_map{
+  height: 130px;
+  margin-top: -20px;
+  background-color: #08667A;
+  
+}
+.sample_map .map_title h3{
+  font-size: 40px;
+  padding: 30px;
+  text-align: center;
+  color: white;
+}
+#map{
+  height: 500px;
+}

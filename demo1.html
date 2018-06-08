@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Google Map API</title>
+</head>
+<style>
+	#map{
+		height: 580px;
+		width: 100%;
+	}
+</style>
+<body>
+	<h3>Google Maps Demo</h3>
+	<div id="map"></div>
+
+	<script>
+		function initMap(){
+			var place = {lat: 20.5937, lng: 78.9629};
+			var map = new google.maps.Map(document.getElementById('map'),{
+				zoom:5,
+				
+				center:place,
+				// type of map properties
+				// mapTypeId: 'satellite',
+				mapTypeId: 'terrain',
+				maxZoom: 12,
+				minZoom: 5
+			});
+			var marker = new google.maps.Marker({
+				position:{lat: 23.6102, lng: 85.2799},
+				map:map
+			});
+			var marker = new google.maps.Marker({
+				position:{lat: 17.3850, lng:78.4867},
+				map:map,
+				
+			})
+		}
+	</script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?AIzaSyC3CJgDdQi7Y2FcxuWvPG_Oo77PjH1kXiE&language=IN&callback=initMap">
+		
+	</script>
+</body>
+</html>
